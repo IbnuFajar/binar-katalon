@@ -35,17 +35,17 @@ class Hook {
 		WebUI.closeBrowser();
 	}
 		
-	//@BeforeTestCase
-	//def beforeTestCase(TestCaseContext testCaseContext) {
-	//	KeywordUtil.logInfo('Test Case: ' + testCaseContext.getTestCaseId())
-	//	this.openBrowser()
-	//}
+	@BeforeTestCase
+	def beforeTestCase(TestCaseContext testCaseContext) {
+		KeywordUtil.logInfo('Test Case: ' + testCaseContext.getTestCaseId())
+		this.openBrowser()
+	}
 	
-	//@AfterTestCase
-	//def afterTestCase(TestCaseContext testCaseContext) {
-	//	KeywordUtil.logInfo('Test Case: ' + testCaseContext.getTestCaseId())
-	//	this.closeBrowser()
-	//}
+	@AfterTestCase
+	def afterTestCase(TestCaseContext testCaseContext) {
+		KeywordUtil.logInfo('Test Case: ' + testCaseContext.getTestCaseId())
+		this.closeBrowser()
+	}
 		
 	@BeforeTestSuite
 	def beforeTestSuite(TestSuiteContext testSuiteContext) {

@@ -12,7 +12,14 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>7516aca7-e98c-4d9c-ac18-4f86cc910518</testSuiteGuid>
    <testCaseLink>
-      <guid>79207fc4-d836-43b1-9e45-373c15253834</guid>
+      <guid>4f296899-500a-440d-ac49-d2286f357389</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Step Definition/Feature Login/LG001 User Login with invalid credentials</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>04a06b31-69f1-4443-b35f-dcfdd9a587a1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Login/LG001 User Login with valid credentials</testCaseId>

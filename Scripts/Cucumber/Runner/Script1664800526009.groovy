@@ -17,13 +17,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementVisible(findTestObject('Page_User_Login/img_bot'))
-
-WebUI.verifyElementVisible(findTestObject('Page_User_Login/btn_login'))
-
-WebUI.verifyElementVisible(findTestObject('Page_User_Login/img_swagslab'))
-
-WebUI.verifyElementVisible(findTestObject('Page_User_Login/textfield_pasword'))
-
-WebUI.verifyElementVisible(findTestObject('Page_User_Login/textfield_username'), FailureHandling.STOP_ON_FAILURE)
-
+CucumberKW.runWithCucumberRunner(Runner.class)

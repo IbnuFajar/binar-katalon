@@ -17,13 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementVisible(findTestObject('Page_User_Login/img_bot'))
+WebUI.callTestCase(findTestCase('Pages/User Login/Input Username'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementVisible(findTestObject('Page_User_Login/btn_login'))
+WebUI.callTestCase(findTestCase('Pages/User Login/Input Password'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementVisible(findTestObject('Page_User_Login/img_swagslab'))
-
-WebUI.verifyElementVisible(findTestObject('Page_User_Login/textfield_pasword'))
-
-WebUI.verifyElementVisible(findTestObject('Page_User_Login/textfield_username'), FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/User Login/Click Login'), [:], FailureHandling.STOP_ON_FAILURE)
 

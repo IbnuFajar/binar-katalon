@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>LG001 User Login with valid credentials</name>
+   <name>Click Login</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>831f5a60-e83e-4dde-9bbc-1ccb8454d3c9</testCaseGuid>
+   <testCaseGuid>1c708ea1-ebb8-47ea-8655-ed99877dce3c</testCaseGuid>
 </TestCaseEntity>
