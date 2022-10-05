@@ -22,7 +22,7 @@
       <guid>04a06b31-69f1-4443-b35f-dcfdd9a587a1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Login/LG001 User Login with valid credentials</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Login/LG002 User Login with valid credentials</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
