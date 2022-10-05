@@ -15,6 +15,7 @@ Feature: Login
   Scenario: LGI003 - User want to login only input registered password
     Then User input registered password only "secret_sauce"
     Then User click on LOGIN button
+    Then User click on LOGOUT button
 
   @LGI004
   Scenario: LGI004 - User want to login using incorrect credential

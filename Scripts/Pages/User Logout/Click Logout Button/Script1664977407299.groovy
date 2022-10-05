@@ -17,11 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Pages/User Login/Verify Content'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Logout/button_Open Menu'))
 
-WebUI.callTestCase(findTestCase('Pages/User Login/Input Username'), [('username') : 'ibnubinaracademy'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/User Login/Input Password'), [('password') : 'passwordku'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/User Login/Click Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Logout/a_Logout'))
 

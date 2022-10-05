@@ -53,31 +53,39 @@ class Login {
 
 	@Then("User input registered username only {string}")
 	public void user_input_registered_username_only(String username) {
-	WebUI.callTestCase(findTestCase('Pages/User Login/Input Username'), [('username') : username], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/User Login/Input Username'), [('username') : username], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("User input registered password only {string}")
 	public void user_input_registered_password_only(String password) {
-	WebUI.callTestCase(findTestCase('Pages/User Login/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/User Login/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
+	}
+	@Then("User click on LOGOUT button")
+	public void user_click_on_LOGOUT_button() {
+		WebUI.callTestCase(findTestCase('Pages/User Logout/Click Logout Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	//@Then("User input incorrect username {string}")
-	//public void user_input_incorrect_username(String username) {
+	@Then("User input incorrect username {string}")
+	public void user_input_incorrect_username(String username) {
+		WebUI.callTestCase(findTestCase('Pages/User Login/Input Username'), [('username') : username], FailureHandling.STOP_ON_FAILURE)
+	}
 
-	//}
 
-	//@Then("User input incorrect password {string}")
-	//public void user_input_incorrect_password(String password) {
 
-	//}
+	@Then("User input incorrect password {string}")
+	public void user_input_incorrect_password(String password) {
+		WebUI.callTestCase(findTestCase('Pages/User Login/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
+	}
 
-	//@Then("User input registered username {string}")
-	//public void user_input_registered_username(String username) {
+	@Then("User input registered username {string}")
+	public void user_input_registered_username(String username) {
+		WebUI.clearText(findTestObject('Page_User_Login/textfield_username'))
+		WebUI.callTestCase(findTestCase('Pages/User Login/Input Username'), [('username') : username], FailureHandling.STOP_ON_FAILURE)
+	}
 
-	//}
-
-	//@Then("User input registered password {string}")
-	//public void user_input_registered_password(String password) {
-
-	//}
+	@Then("User input registered password {string}")
+	public void user_input_registered_password(String password) {
+		WebUI.clearText(findTestObject('Page_User_Login/textfield_pasword'))
+		WebUI.callTestCase(findTestCase('Pages/User Login/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
+	}
 }

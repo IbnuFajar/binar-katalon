@@ -25,3 +25,5 @@ WebUI.callTestCase(findTestCase('Pages/User Login/Input Password'), [('password'
 
 WebUI.callTestCase(findTestCase('Pages/User Login/Click Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('Pages/User Logout/Click Logout Button'), [:], FailureHandling.STOP_ON_FAILURE)
+
