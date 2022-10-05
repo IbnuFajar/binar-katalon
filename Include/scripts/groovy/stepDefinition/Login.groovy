@@ -47,19 +47,19 @@ import cucumber.api.java.en.When
 
 class Login {
 	@Then("User click on LOGIN button")
-	public void user_click_on_LOGIN_button() {		
+	public void user_click_on_LOGIN_button() {
 		WebUI.callTestCase(findTestCase('Pages/User Login/Click Login'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	//@Then("User input registered username only {string}")
-	//public void user_input_registered_username_only(String username) {
-	//	WebUI.callTestCase(findTestCase('Pages/User Login/Input Username'), [:], FailureHandling.STOP_ON_FAILURE)
-	//}
+	@Then("User input registered username only {string}")
+	public void user_input_registered_username_only(String username) {
+	WebUI.callTestCase(findTestCase('Pages/User Login/Input Username'), [('username') : username], FailureHandling.STOP_ON_FAILURE)
+	}
 
-	//@Then("User input registered password only {string}")
-	//public void user_input_registered_password_only(String password) {
-	//	WebUI.callTestCase(findTestCase('Pages/User Login/Input Password'), [:], FailureHandling.STOP_ON_FAILURE)
-	//}
+	@Then("User input registered password only {string}")
+	public void user_input_registered_password_only(String password) {
+	WebUI.callTestCase(findTestCase('Pages/User Login/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
+	}
 
 	//@Then("User input incorrect username {string}")
 	//public void user_input_incorrect_username(String username) {
