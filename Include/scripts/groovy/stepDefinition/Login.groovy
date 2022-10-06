@@ -59,6 +59,8 @@ class Login {
 	@Then("User input registered password only {string}")
 	public void user_input_registered_password_only(String password) {
 		WebUI.callTestCase(findTestCase('Pages/User Login/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
+		//WebUI.closeBrowser()
+		//WebUI.navigateToUrl('https://www.saucedemo.com/')
 	}
 	@Then("User click on LOGOUT button")
 	public void user_click_on_LOGOUT_button() {
